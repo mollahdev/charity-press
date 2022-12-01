@@ -1,0 +1,51 @@
+.banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--demo {
+        background-image: url(../images/common/welcome-bg.webp); 
+        background-position: center;  
+        .overlay {
+            padding: 170px 0px;
+
+            @include responsive( $sm-mobile ) {
+                padding: 75px 0px;
+            }
+            
+            @include responsive( $mobile ) {
+                padding: 75px 0px;
+            }
+        } 
+    }
+
+    &__logo {
+        @extend .mb-30px;
+    }
+
+    &__title {
+        @extend .fw-bold, .fs-1 ,.mb-30px;
+    }
+
+    &__sub-title {
+        @extend .fs-4, .mb-30px, .fw-medium;
+    }
+
+    &__group-btn {
+        a {
+            @extend .no-underline, .inline-block, .rounded-pill, .btn-base;
+        }
+    }
+    
+    &__button-primary {
+        --text-color: var(--bs-white);
+        --background-color: var(--paste-color);
+        --hover-background-color: var(--navy-color);
+    }
+
+    &__button-secondary {
+        --text-color: var(--bs-white);
+        --background-color: var(--orange-color);
+        --hover-background-color: var(--paste-color);   
+    }
+    
+}

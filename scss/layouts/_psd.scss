@@ -1,0 +1,42 @@
+.psd-section {
+    padding: 85px 0px 170px 0px;
+
+    @include responsive( $sm-mobile ) {
+        padding: 85px 0px;
+    }
+
+    @include responsive( $mobile ) {
+        padding: 30px 0px 85px 0px;
+    }
+
+    &__preview-container {
+        padding: 50px 0px;
+
+      
+    }
+
+    &__card {
+        @extend .position-relative;
+    }
+
+    .btn-holder {
+        @extend %position_center_x;
+    }
+
+    a {
+        @extend .no-underline, .inline-block, .rounded-pill, .btn-base;
+        --text-color: var(--bs-white);
+        --background-color: var(--paste-color);
+        --hover-background-color: var(--navy-color);
+        bottom: -85px;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.235);
+
+        @include responsive( $sm-mobile ) {
+           bottom: -45px;
+        }
+
+        @include responsive( $mobile ) {
+            bottom: -45px;
+         }
+    }
+}

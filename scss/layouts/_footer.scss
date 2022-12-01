@@ -1,0 +1,9 @@
+.site-footer {
+    padding: 20px 0px;
+    background-color: #424242;
+    @extend .fw-semibold;
+
+    a {
+        @extend .fs-6, .no-underline, .fw-semibold, .text-white;
+    }
+}

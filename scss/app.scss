@@ -1,2 +1,22 @@
-@import './pages/home';
-@import './pages/about';
+//Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//Utilities
+@import './utilities/variables',
+        './utilities/extend',
+        './utilities/mixins';
+
+//base
+@import './base/reset';
+
+//component
+@import './components/button',
+        './components/section-heading';
+
+//layout
+@import './layouts/banner',
+        './layouts/demo',
+        './layouts/footer',
+        './layouts/psd';
+//pages
+@import './pages/demo';
