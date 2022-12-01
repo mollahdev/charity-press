@@ -1,112 +1,100 @@
 <?php  
     // document open
     include './partials/document-open.php'; 
-
-    
 ?>
-<!---banner section start--->
 <section class="banner banner--demo">
-    <div class="banner__overlay">
-       <div class="container text-center text-white">
-           <picture>
-            <img class="banner__img mb-30" lodding="lazy" src="./images/logos/logo.webp" alt="" srcset="">
+    <div class="overlay">
+         <div class="container text-center text-white">
+            <picture>
+                <img class="banner__logo"  loading="lazy" src="./images/logos/logo.webp" alt="logo-image">
             </picture>
-            <h1 class="banner__title text-lg weight-lg l-height mb-30">CharityPress</h1>
-            <h4 class="banner__sub-title text-md weight-m m-height mb-40">CharityPress - Charity Fundraising HTML Template</h4>
-            <div class="banner__group-btn">
-                <a class="banner__primary-btn" href="#">
-                    <span>Buy theme</span>
+            <h1 class="banner__title lh-lg">CharityPress</h1>
+            <h4 class="banner__sub-title lh-lg">CharityPress - Charity Fundraising HTML Template</h4>
+            <div class="banner__group-btn d-flex align-items-center gap-4 justify-content-center text-center">
+                <a class="banner__button-primary" href="#">
+                    <span>buy theme</span>
                 </a>
-                <a class="banner__secondary-btn" href="#">
+                <a class="banner__button-secondary" href="#">
                     <span>demos</span>
                 </a>
             </div>
-       </div>
+        </div>
     </div>
-</section><!---banner section end--->
-<!---hero section start--->
-<section class="hero">
-    <div class="container text-center">
-        <div class="section-heading text-center mb-70">
+</section>
+<!--banner-end-->
+<section class="demo-section">
+    <div class="container">
+        <div class="section-heading--center">
             <h2 class="section-heading__title">3 Unique Demos</h2>
-            <p class="section-heading__sub-title text-uppercase">Choose Your layout</p>
+            <p class="section-heading__sub-title">CHOOSE YOUR LAYOUT</p>
         </div>
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="hero__single-wrapper">
-                    <div class="hero__single-demo">
-                        <picture>
-                            <img loading="lazy" src="./images/common/demo_1.webp" alt="" srcset="">
-                        </picture>
-                        <div class="hero__demo-content">
-                            <a class="hero__primary-btn" href="#">
-                                <span>Index Version 1</span>
-                            </a>
-                        </div>
+        <div class="row gy-5 demo-section__preview-container">
+            <div class="col-sm-6 col-md-4">
+                <div class="demo-section__card">
+                    <picture>
+                        <img class="w-100 h-auto" width="310" height="470" loading="lazy" src="./images/common/demo_1.webp" alt="preview-image">
+                    </picture>
+                    <div class="btn-holder">
+                        <a href="home-1.php">
+                            <span>INDEX VERSION 1</span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="hero__single-wrapper">
-                    <div class="hero__single-demo">
-                        <picture>
-                            <img loading="lazy" src="./images/common/demo_2.webp" alt="" srcset="">
-                        </picture>
-                        <div class="hero__demo-content">
-                            <a class="hero__primary-btn" href="#">
-                                <span>Index Version 2</span>
-                            </a>
-                        </div>
+            <div class="col-sm-6 col-md-4">
+            <div class="demo-section__card">
+                    <picture>
+                        <img class="w-100 h-auto" width="310" height="470" loading="lazy" src="./images/common/demo_2.webp" alt="preview-image">
+                    </picture>
+                    <div class="btn-holder">
+                        <a href="home-2.php">
+                            <span>INDEX VERSION 2</span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="hero__single-wrapper">
-                    <div class="hero__single-demo">
-                        <picture>
-                            <img loading="lazy" src="./images/common/demo_3.webp" alt="" srcset="">
-                        </picture>
-                        <div class="hero__demo-content">
-                            <a class="hero__primary-btn" href="#">
-                                <span>Index Version 3</span>
-                            </a>
-                        </div>
+            <div class="col-sm-6 col-md-4">
+            <div class="demo-section__card">
+                    <picture>
+                        <img class="w-100 h-auto" width="310" height="470" loading="lazy" src="./images/common/demo_3.webp" alt="preview-image">
+                    </picture>
+                    <div class="btn-holder">
+                        <a href="home-3.php">
+                            <span>INDEX VERSION 3</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section><!---hero section end--->
-<!---laptop section start--->
-<section class="laptop">
-    <div class="container text-center">
-        <div class="section-heading text-center mb-70">
+</section>
+<!--demo-section end-->
+<section class="psd-section">
+<div class="container">
+        <div class="section-heading--center">
             <h2 class="section-heading__title">PSD Included</h2>
-            <p class="section-heading__sub-title text-uppercase">multi-varations</p>
+            <p class="section-heading__sub-title">MULTI-VARIATION</p>
         </div>
-    <div class="row">
-        <div class="col-12 col-md-12">
-            <div class="laptop__demo-img text-center mb-70">
-                <picture>
-                    <img width="1100" height="540" loading="lazy" src="./images/common/mock_psd.webp" alt="" srcset="">
-                </picture>
+        <div class="row gy-3 psd-section__preview-container">
+            <div class="col">
+                <div class="psd-section__card">
+                    <picture>
+                        <img class="w-100 h-auto" width="1110" height="545" loading="lazy" src="./images/common/mock_psd.webp" alt="preview-image">
+                    </picture>
+                    <div class="btn-holder">
+                        <a href="purchase.php">
+                            <span>PURCHASE NOW</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="laptop__demo-content mb-40">
-                <a class="laptop__primary-btn" href="#">
-                    <span>phurchase now</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-</section><!---laptop section end--->
-<!---site footer section start--->
-<footer class="site-footer text-center">
-    <span>Copyright by©
-        <a href="#">xpeedstudio</a>
-        - 2018  
-    </span>
-    
-</footer><!---site footer section end--->
+</section>
+<!--psd-section end-->
+<footer class="site-footer text-center text-white">
+Copyright by©
+<a href="https://xpeedstudio.com/html/charitypress"target="_blank">xpeedstudio</a>
+- 2018
+</footer>
+
 
 <?php include './partials/document.close.php' ?>

@@ -1,21 +1,22 @@
-// Then import Bootstrap
+//Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-//utilits
-@import
-       './utilits/variable',
-       './utilits/extends',
-        './utilits/mixin';
+//Utilities
+@import './utilities/variables',
+        './utilities/extend',
+        './utilities/mixins';
+
 //base
 @import './base/reset';
 
-//components
-@import './components/button';
-@import './components/section-heading';
-//layout
-@import './layout/hero';
-@import './layout/laptop';
-@import './layout/site-footer';
+//component
+@import './components/button',
+        './components/section-heading';
 
+//layout
+@import './layouts/banner',
+        './layouts/demo',
+        './layouts/footer',
+        './layouts/psd';
 //pages
 @import './pages/demo';

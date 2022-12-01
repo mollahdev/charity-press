@@ -1,14 +1,21 @@
-.section-heading{
-     &__title{
-        font-size: 42px;
-        font-weight: 500;
-        margin-bottom: 20px;
-        color: $black;
-     }
+.section-heading {
+    &--center {
+        @extend .text-center;
+    }
 
-     &__sub-title{
-        font-size: 14px;
-        font-weight: 500;
-        color: $purple-100;
-     }
+    &__title {
+        @extend .fs-1, .fw-medium, .mb-20px;
+        color: $dark-color;
+
+        @include responsive( $mobile ) {
+            @extend .fs-1;
+            margin-bottom: 14px;
+    }
+
+    &__sub-title {
+        @extend .fs-6, .fw-normal;
+        color: $deep-purple;
+        margin: 0;
+    }
+  }
 }

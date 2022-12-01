@@ -1,32 +1,37 @@
 .demo-section {
-    padding: 85px 0;
+    padding: 85px 0px;
 
     @include responsive( $mobile ) {
-        padding: 50px 0;
-    }
-
+    padding: 50px 0px;
+}
     &__preview-container {
-        padding-top: 70px;
+        padding-top: 50px;
 
         @include responsive( $mobile ) {
-            padding-top: 30px
+            padding: 30px 0px;
         }
     }
 
     &__card {
         @extend .position-relative;
-
+    
         .btn-holder {
             @extend %position_center_x;
         }
-
+        
         a {
-            @extend .no-underline, .inline-block, .rounded-pill, .btn-base;
             --text-color: var(--bs-white);
-            --background-color: var(--sky-blue);
-            --hover-background-color: var(--blue-color); 
+            --background-color: var(--paste-color);
+            --hover-background-color: var(--navy-color);
+            @extend .no-underline, .inline-block, .rounded-pill, .btn-base;
             bottom: 20px;
             box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.235);
+
+            @include responsive( $tablet ) {
+                padding: 12px 15px !important;
+                white-space: nowrap;
+            }
         }
-    }
+
+    }  
 }
