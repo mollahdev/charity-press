@@ -1,5 +1,9 @@
 //Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import './libs/owl-carousel/owl-carousel';
+@import 
+    './libs/fontawesome/fontawesome.scss',
+    './libs/fontawesome/solid.scss';
 
 //Utilities
 @import './utilities/variables',
