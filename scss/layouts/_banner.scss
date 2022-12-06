@@ -1,7 +1,7 @@
 .banner {
     background-repeat: no-repeat;
     background-size: cover;
-
+    // demo page banner
     &--demo {
         background-image: url(../images/common/welcome-bg.webp); 
         background-position: center;  
@@ -18,16 +18,33 @@
         } 
     }
 
+    // index page banner
+    &--1 {
+        .overlay .container {
+            height: 90vh; 
+        }
+    }
+
     &__logo {
         @extend .mb-30px;
     }
 
     &__title {
         @extend .fw-bold, .fs-1 ,.mb-30px;
+        // index page styles
+        &--home {
+            font-size: 64px !important;
+            color: var(--bs-white)
+        }
     }
 
     &__sub-title {
         @extend .fs-4, .mb-30px, .fw-medium;
+        // index page styles
+        &--home {
+            font-size: 17px !important;
+            color: var(--bs-white)
+        }
     }
 
     &__group-btn {
@@ -40,12 +57,47 @@
         --text-color: var(--bs-white);
         --background-color: var(--paste-color);
         --hover-background-color: var(--navy-color);
+
+        // index page styles
+        &--home {
+            --text-color: var(--bs-white);
+            --background-color: var(--bs-white);
+            --hover-background-color: var(--bs-white);
+        }
     }
 
     &__button-secondary {
         --text-color: var(--bs-white);
         --background-color: var(--orange-color);
         --hover-background-color: var(--paste-color);   
+        
+        // index page styles
+        &--home {
+            --text-color: var(--bs-white);
+            --background-color: var(--paste-color);
+            --hover-background-color: var(--navy-color); 
+        }
     }
     
+}
+
+
+.home-banner {
+    --image-position: center top;
+    &__item-1 {
+        background-image: url(../images/carousel/slider_1.jpg);
+        @extend %background-full;
+    }
+    &__item-2 {
+        background-image: url(../images/carousel/slider_2.jpg);
+        @extend %background-full;
+    }
+    &__item-3 {
+        background-image: url(../images/carousel/slider_3.jpg);
+        @extend %background-full;
+    }
+
+    .overlay .container {
+        @extend .flex, .flex-column, .items-center, .justify-center;
+    }
 }
