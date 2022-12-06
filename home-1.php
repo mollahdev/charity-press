@@ -29,7 +29,4 @@
         </div>
     </div>
 </section>
-
-<i class="fa-solid fa-car"></i>
-
 <?php include './partials/document.close.php' ?>
