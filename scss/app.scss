@@ -3,12 +3,14 @@
 @import './libs/owl-carousel/owl-carousel';
 @import 
     './libs/fontawesome/fontawesome.scss',
+    './libs/fontawesome/regular.scss',
     './libs/fontawesome/solid.scss';
 
 //Utilities
 @import './utilities/variables',
         './utilities/extend',
-        './utilities/mixins';
+        './utilities/mixins',
+        './utilities/keyframes';
 
 //base
 @import './base/reset';
@@ -22,6 +24,3 @@
         './layouts/demo',
         './layouts/footer',
         './layouts/psd';
-        
-//pages
-@import './pages/demo';

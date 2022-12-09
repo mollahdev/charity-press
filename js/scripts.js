@@ -10,5 +10,11 @@ jQuery(function(){
         autoplayHoverPause: true,
         animateIn: 'fadeIn',
         animateOut: 'fadeOut',
+        nav: true,
+        dots: false,
+        center: true,
+        navContainerClass: "banner__nav",
+        navClass: ['banner__nav__prev-btn', 'banner__nav__next-btn'],
+        navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>']
     })
 })

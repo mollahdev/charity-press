@@ -1,6 +1,7 @@
 .banner {
     background-repeat: no-repeat;
     background-size: cover;
+
     // demo page banner
     &--demo {
         background-image: url(../images/common/welcome-bg.webp); 
@@ -21,7 +22,7 @@
     // index page banner
     &--1 {
         .overlay .container {
-            height: 90vh; 
+            min-height: 800px; 
         }
     }
 
@@ -43,7 +44,9 @@
         // index page styles
         &--home {
             font-size: 17px !important;
-            color: var(--bs-white)
+            color: var(--bs-white);
+            max-width: 600px;
+            text-align: center;
         }
     }
 
@@ -76,6 +79,56 @@
             --text-color: var(--bs-white);
             --background-color: var(--paste-color);
             --hover-background-color: var(--navy-color); 
+        }
+    }
+
+    &__nav {
+        @extend 
+            .position-absolute, .top-50, .start-0, 
+            .translate-middle-y, .d-flex, .justify-content-between, 
+            .align-items-center, .w-100, %default_tarnsition;
+        
+        button {
+            @include equal-size(50px);
+            @extend .rounded-circle, .border, .border-0, %default_tarnsition, .opacity-0;
+            background-color: $paste-color;
+            color: var(--bs-white);
+
+            &:hover {
+                background-color: $navy-color;
+            }
+        }
+    }
+
+    &:hover {
+        .banner__nav {
+            padding: 0 40px;
+            button {
+                @extend .opacity-100;
+            }
+        }
+    }
+
+    .active {
+        .banner {
+            &__title,
+            &__sub-title,
+            &__button-primary,
+            &__button-secondary {
+                animation: animLeft 1s ease 100ms both;
+            }
+
+            &__sub-title {
+                animation-delay: 500ms;
+            }
+
+            &__button-primary {
+                animation-delay: 800ms;
+            }
+            
+            &__button-secondary {
+                animation-delay: 1200ms;
+            }
         }
     }
     
